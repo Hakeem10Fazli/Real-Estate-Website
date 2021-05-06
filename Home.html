@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="CSS.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="JavaScript.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css'>
+
+    <nav class="navbarnav">
+        <a href="Home.html" class="btn">Home</a>
+        <a href="About.html" class="btn">About</a>
+        <a href="Properties.html" class="btn">Properties</a>
+
+    </nav>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="fav.js"></script>
+    <script src="propertySearch.js"></script>
+    <link rel="stylesheet" type="text/css" href="CSS.css">
+
+
+</head>
+
+<style>
+    body {
+        background-image: url("images/home.png");
+        background-size: cover;
+
+    }
+</style>
+
+<body>
+    <div class="top">
+        <a class="back" href="#top">Back to top</a>
+    </div>
+
+    <div id="maincontainer">
+
+        <form id="main">
+
+            <label for="type">Type</label>
+            <select id="type" name="country">
+                <option value="House">House</option>
+                <option value="Flat">Flat</option>
+            </select>
+
+            <label for="price">Min Price Range</label>
+            <select id="minAmount" name="price">
+                <option value="200000">$ 200,000</option>
+                <option value="400000">$ 400,000</option>
+                <option value="500000">$ 500,000</option>
+                <option value="600000">$ 600,000</option>
+                <option value="700000">$ 700,000</option>
+                <option value="800000">$ 800,000</option>
+            </select>
+
+            <label for="price">Max Price Range</label>
+            <select id="maxAmount" name="price">
+                <option value="200000">$ 200,000</option>
+                <option value="400000">$ 400,000</option>
+                <option value="500000">$ 500,000</option>
+                <option value="600000">$ 600,000</option>
+                <option value="700000">$ 700,000</option>
+                <option value="800000">$ 800,000</option>
+            </select>
+
+            <label for="bedroom">Minimum Bedrooms</label>
+            <select id="minBed" name="bedroom">
+                <option value="1">1 Bedroom</option>
+                <option value="2">2 Bedroom</option>
+                <option value="3">3 Bedroom</option>
+            </select>
+
+            <label for="bedroom">Maximum Bedrooms</label>
+            <select id="maxBed" name="bedroom">
+                <option value="1">1 Bedroom</option>
+                <option value="2">2 Bedroom</option>
+                <option value="3">3 Bedroom</option>
+            </select>
+
+            <label for="dateadded">Time added</label>
+            <select id="date" name="date">
+                <option value="1week">One Week Ago</option>
+                <option value="2weeks">Two Weeks Ago</option>
+                <option value="1month">One Month Ago</option>
+            </select>
+
+            <button type="button" id="search"> Search </button>
+
+        </form>
+      
+    </div>
+    <div class="container">
+        <div id="searches-response">
+            
+        </div>
+
+    </div>
+  
+  
+
+    <section class="section">
+        <h2>FAVOURITE LIST</h2>
+        <p class="blog-description">Drag and drop your favourite property</p>
+        <div class="ui-widget ui-helper-clearfix">
+
+            <ul id="gallery" class="gallery ui-helper-reset ui-helper-clearfix">
+                <li class="ui-widget-content ui-corner-tr">
+                    <h5 class="ui-widget-header"><br /> Battaramulla </h5>
+                    <img src="images/Thumbnails/battaramulla.jpg" class="card-img-top"  width="120" height="120">
+                    
+                    <a href="link/to/trash/script/when/we/have/js/off" 
+                        class="ui-icon ui-icon-plus">Add to Favorites</a>
+                </li>
+                <li class="ui-widget-content ui-corner-tr">
+                    <h5 class="ui-widget-header"><br>Borella </h5>
+                    <img src="images/Thumbnails/borella.jfif" class="card-img-top"  width="120" height="120">
+                    
+                    <a href="link/to/trash/script/when/we/have/js/off" 
+                        class="ui-icon ui-icon-plus">Add to Favorites</a>
+                </li>
+                <li class="ui-widget-content ui-corner-tr">
+                    <h5 class="ui-widget-header"><br /> Galaha </h5>
+                    <img src="images/Thumbnails/galaha.jpg" class="card-img-top"  width="120" height="120">
+                    
+                    <a href="link/to/trash/script/when/we/have/js/off" 
+                        class="ui-icon ui-icon-plus">Add to Favorites</a>
+                </li>
+                <li class="ui-widget-content ui-corner-tr">
+                    <h5 class="ui-widget-header"><br>Galle </h5>
+                    <img src="images/Thumbnails/galle.png" class="card-img-top" width="120" height="120">
+                   
+                    <a href="link/to/trash/script/when/we/have/js/off" 
+                        class="ui-icon ui-icon-plus">Add to Favorites</a>
+                </li>
+                <li class="ui-widget-content ui-corner-tr">
+                    <h5 class="ui-widget-header"><br>Kotte </h5>
+                    <img src="images/Thumbnails/kotte.jpg" class="card-img-top"  width="120" height="120">
+                    
+                    <a href="link/to/trash/script/when/we/have/js/off"
+                        class="ui-icon ui-icon-plus">Add to Favorites</a>
+                </li>
+                <li class="ui-widget-content ui-corner-tr">
+                    <h5 class="ui-widget-header"><br>Nugegoda </h5>
+                    <img src="images/Thumbnails/nugegoda.jpg" class="card-img-top" alt="Indian Ocean" width="120" height="120">
+                    
+                    <a href="link/to/trash/script/when/we/have/js/off" title="Favorite this land"
+                        class="ui-icon ui-icon-plus">Add to Favorites</a>
+                </li>
+                <li class="ui-widget-content ui-corner-tr">
+                    <h5 class="ui-widget-header"><br>Nuwara Eliya </h5>
+                    <img src="images/Thumbnails/nuwara.jpg" class="card-img-top" alt="Indian Ocean" width="120" height="120">
+                   
+                    <a href="link/to/trash/script/when/we/have/js/off" title="Favorite this land"
+                        class="ui-icon ui-icon-plus">Add to Favorites</a>
+                </li>
+                <li class="ui-widget-content ui-corner-tr">
+                    <h5 class="ui-widget-header"><br>Rajagiriya </h5>
+                    <img src="images/Thumbnails/rajagiriya.jpg" class="card-img-top" alt="Indian Ocean" width="120" height="120">
+                    
+                    <a href="link/to/trash/script/when/we/have/js/off" title="Favorite this land"
+                        class="ui-icon ui-icon-plus">Add to Favorites</a>
+                </li>
+            </ul>
+
+            <div id="favList" class="ui-widget-content ui-state-default">
+                <h4 class="ui-widget-header">Favourite</span> List </h4>
+            </div>
+
+            <button id="search" type="button" onclick="clearList()"> Clear List</button>
+
+        </div>
+    </section>
+
+  
+    
+
+
+</body>
+
+<div class="footer">
+    <div class="logocontent">
+        Lands.LK
+    </div>
+    <div class="footercol">
+        <h1>Need Help?</h1><br>
+        <a href="#">Terms & Conditions</a><br>
+        <a href="#">Privacy policy</a>
+    </div>
+    <div class="footercol1">
+
+        <h1>Explore</h1><br>
+        <a href="Home.html">Home</a><br>
+        <a href="About.html">About</a><br>
+        <a href="Properties.html">Properties</a><br>
+
+
+         <div class="footercol2">
+        <h1>Contact Us</h1><br>
+        <p>No 450/1 Dutugemunu Street,<br>TownHall,<br>Colombo-07.</p>
+        <a style="display:block" href="https://www.facebook.com/" target="_blank">
+            <img src="images\fb1.svg" alt="facebooklogo" class="fb1">
+        </a>
+        <a style="display:block" href="https://www.instagram.com/" target="_blank">
+            <img src="images\insta1.png" alt="instagram" class="insta1">
+        </a>
+        <div class="wt2"></div>
+        <a style="display:block" href="https://twitter.com/" target="_blank">
+            <img src="images\tw2.png" alt="twitter" class="tw2">
+        </a>
+        </div>
+    </div>
+</div>
+
+</html>
